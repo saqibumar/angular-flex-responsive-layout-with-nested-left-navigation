@@ -4,6 +4,6 @@ Steps to run
 
 1- open command prompt or bash to the directory
 
-2- run npm i
+2- run "npm i"
 
-3 ng serve
+3 "ng serve"
