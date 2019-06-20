@@ -1,0 +1,56 @@
+<div class="login-page">
+    <div class="content" style="margin-top:150px;">
+        <!-- <h1 class="app-name">Sb Admin Material</h1> -->
+        <form class="login-form" fxFlex>
+                <div class="row">
+                        <div class="col-xs-3" style="padding:10px;">
+                            <img src="../../assets/icons/kdz_ico_login.svg" style="width:3.5rem;">
+                        </div>
+                        <div class="col-xs-9" style="padding:10px;">
+                                <!-- <div class="text-center"> -->                    
+                                        Welcome to the Company Logo
+                                        <br>
+                                        <b>Content Management System</b>
+                                        <!-- <h2 class="app-name">Content Management System</h2> -->
+                                    <!-- </div> -->
+                            </div>
+            
+                    </div>
+            <div fxFlex  fxlayout="row" fxlayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput placeholder="Email">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div fxFlex  fxLayout="row" fxLayout.lt-md="column">
+                <div fxFlexFill>
+                    <mat-form-field class="w-100">
+                        <input matInput type="password" placeholder="Password" showHideInput id="password1">
+                        <!-- <i class="material-icons" matSuffix showHideTrigger="password1"></i> -->
+                    </mat-form-field>
+                </div>
+            </div>
+            <!-- <div fxFlex  fxLayout="row" fxLayout.lt-md="column" style="margin: 20px 0 30px 0">
+                <div fxFlex>
+                    <mat-checkbox color="primary">Remember Me</mat-checkbox>
+                </div>
+                <div fxFlex  fxLayoutAlign="end">
+                    <a href="javascript:void(0)">Forget Password</a>
+                </div>
+            </div> -->
+            <div fxFlex  fxLayout="row" fxLayout.lt-md="column">
+                <div fxFlexFill>
+                    <button mat-raised-button xcolor="primary" class="w-100" (click)="onLogin()">Login</button>
+                </div>
+            </div>
+            <div fxFlex  fxLayout="row" fxLayout.lt-md="column" style="margin: 20px 0 30px 0">
+                    <div fxFlex>
+                        If you don’t have your password or have forgotten it, contact to your facility administrator
+                    </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>

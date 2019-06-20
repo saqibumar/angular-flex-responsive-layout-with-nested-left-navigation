@@ -1,0 +1,66 @@
+<div class="content">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            By default the games contents are in English - United States, so it will
+            be the template for translations into other languages. 
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          
+          <mat-select placeholder="Language to edit">
+            <mat-option>
+              Select a language
+            </mat-option>
+          </mat-select>
+            
+        </div>
+        <div class="col-sm-12">
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            In this section you will find the interface contents, such as titles, tutorial instructions,
+            warnings, buttons, etc.    
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-11">
+            <mat-tab-group>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <mat-icon svgIcon="kdz_ico_tab_gamplay" class="sidenav-icon linkColor"></mat-icon>
+                        <span>GamePlay</span>
+                    </ng-template>
+                    GamePlay TEXT HERE
+                </mat-tab>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <mat-icon svgIcon="kdz_ico_tab_tutorial" class="sidenav-icon linkColor"></mat-icon>
+                        <span>Tutorial</span>
+                    </ng-template>
+                    Tutorial TEXT HERE
+                </mat-tab>
+                <mat-tab>
+                    <ng-template mat-tab-label>
+                        <mat-icon svgIcon="kdz_ico_tab_warnings" class="sidenav-icon linkColor"></mat-icon>
+                        <span>Warnings</span>
+                    </ng-template>
+                    Warnings TEXT HERE
+                </mat-tab>
+            </mat-tab-group>
+
+            <!-- <nav mat-tab-nav-bar [backgroundColor]="background">
+                <a mat-tab-link *ngFor="let link of links"
+                   (click)="activeLink = link"
+                   [active]="activeLink == link"> {{link}} </a>
+                <a mat-tab-link disabled>Disabled Link</a>
+              </nav>   --> 
+        </div>
+        <div class="col-1">
+          <button mat-raised-button>Save</button>
+        </div>
+    </div>
+
+</div>

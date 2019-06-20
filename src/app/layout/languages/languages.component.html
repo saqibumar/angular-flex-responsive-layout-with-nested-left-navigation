@@ -1,0 +1,77 @@
+<div class="content">
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <h2>Languages</h2>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <button mat-raised-button (click)="openDialog()">
+                Add Language
+            </button>
+        </div>
+        <div class="col-sm-12">
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+                By default the games contents are in English - United States, so it will be the template for translations into other languages
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+                        <!--- Note that these columns can be defined in any order.
+                              The actual rendered columns are set as a property on the row definition" -->
+                      
+                        <!-- Position Column -->
+                        <ng-container matColumnDef="name">
+                          <th mat-header-cell *matHeaderCellDef> NAME </th>
+                          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                        </ng-container>
+                      
+                        <!-- Name Column -->
+                        <ng-container matColumnDef="code">
+                          <th mat-header-cell *matHeaderCellDef> CODE </th>
+                          <td mat-cell *matCellDef="let element"> {{element.code}} </td>
+                        </ng-container>
+                      
+                        <!-- Weight Column -->
+                        <ng-container matColumnDef="associatedFacilities">
+                          <th mat-header-cell *matHeaderCellDef> ASSOCIATED FACILITIES </th>
+                          <td mat-cell *matCellDef="let element"> {{element.associatedFacilities}} </td>
+                        </ng-container>
+                      
+                        <!-- Symbol Column -->
+                        <ng-container matColumnDef="actions">
+                          <th mat-header-cell *matHeaderCellDef> ACTIONS </th>
+                          <td mat-cell *matCellDef="let element"> 
+                              <div class="row" *ngIf="element.actions==='published'" class="text-center disabled">
+                                Published
+                              </div>
+                              <div *ngIf="element.actions==='draft'">
+                                    <div style="padding-top:10px;">
+                                        <mat-form-field style="padding:10px;">
+                                            <mat-select [(value)]="selected">
+                                                <mat-option *ngFor="let state of states" [value]="state">{{state}}</mat-option>
+                                            </mat-select>
+                                        </mat-form-field>
+                                        <button class="pull-right" mat-raised-button
+                                            style="margin-top:20px;">Edit</button>
+                                    </div>
+                                </div>
+                            </td>
+                        </ng-container>
+                      
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                      </table>
+
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+  }
+
+.disabled{
+    border: 1px solid black; 
+    background-color:silver;
+    border-radius: 10px 10px 10px 10px;
+}
+
+button{
+    background-color: #FC8735 !important;
+    color: #FFFFFF;
+    // padding: 10px 30px;
+    /* border: 1px solid silver;
+    border-radius: 50px 50px 50px 50px; */
+}
+
+/* table th:nth-child() {
+    width: 30%;
+} */
+
+table th:last-child {
+    width: 300px;
+}

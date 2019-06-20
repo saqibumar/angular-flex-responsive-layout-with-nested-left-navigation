@@ -1,0 +1,34 @@
+@import 'material';
+@import 'main';
+@import 'utils';
+@import 'responsive';
+
+/* button{
+    background-color: #FC8735 !important;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    border: 1px solid silver;
+    border-radius: 50px 50px 50px 50px;
+}
+
+
+.mat-form-field-infix{
+    border: 1px solid !important;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline{
+    height: 0px !important;
+}
+
+.mat-select-value-text{
+    padding: 10px;
+} */
+
+.resetRotate{
+    transform: rotate(0deg) !important;
+}
+
+.resetRotate90{
+    transform: rotate(-90deg) !important;
+}
