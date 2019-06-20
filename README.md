@@ -1,2 +1,1 @@
-# angular-flex-responsive-layout-with-nested-left-navigation
-angular flex responsive layout with nested left navigation
+# kidzania-mingames-cms-v2
